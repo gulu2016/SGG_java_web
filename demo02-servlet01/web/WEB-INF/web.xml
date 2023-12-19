@@ -5,7 +5,7 @@
          version="5.0">
 
     <servlet>
-        <!--给UserServlet起一个别名
+        <!-- s67-2-4 给UserServlet起一个别名
             servlet-class 告诉tomcat对应要实例化的servlet类
             servlet-name 用于关联请求的映射路径
             -->
@@ -15,9 +15,10 @@
 
 
     <servlet-mapping>
-        <!--关联别名和映射路径-->
+        <!--s67-2-3 关联别名和映射路径-->
         <servlet-name>userServlet</servlet-name>
-        <!--可以为一个Servlet匹配多个不同的映射路径,但是不同的Servlet不能使用相同的url-pattern-->
+        <!--s67-2-1 定义别名对应的路径名字-->
+        <!--s67-2-2 可以为一个Servlet匹配多个不同的映射路径,但是不同的Servlet不能使用相同的url-pattern-->
         <url-pattern>/userServlet</url-pattern>
         <!-- <url-pattern>/userServlet2</url-pattern>-->
         <!--
